@@ -1,0 +1,25 @@
+p{
+    /* Border */
+    border: 5px solid black;
+
+    /* Dimentions */
+
+    width: 400px;
+    height: 200px;
+
+    /* Margin */
+
+    /* margin: 80px; */
+    /* margin: 20px 30px 40px 50px; */
+    /* margin: 30px 40px; */
+    margin: 30px auto;
+
+
+
+    /* Padding */
+
+    /* padding: 50px; */
+    padding: 20px 30px 40px 50px;;
+}
+
+

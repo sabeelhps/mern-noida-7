@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* For colors please read :  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+
+nav{
+    font-size: 2rem;
+    background-color: #023e8a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
