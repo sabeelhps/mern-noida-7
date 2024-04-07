@@ -1,0 +1,35 @@
+section{
+    border: 20px solid gray;
+    padding: 1rem;
+    width: 80vw;
+    margin: 20px auto;
+}
+
+section h1{
+    font-size: 7rem;
+    text-align: center;
+    color: purple;
+}
+
+@media screen and (width<=1040px){
+    section h1{
+        font-size: 5rem;
+        color: lightcoral;
+    }
+}
+
+
+@media screen and (width<=740px){
+    section h1{
+        font-size: 4rem;
+        color: lightseagreen;
+    }
+}
+
+
+@media screen and (orientation:portrait){
+    section p{
+        text-decoration: line-through;
+        font-size: 1.8rem;
+    }
+}

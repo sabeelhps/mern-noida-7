@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+    top:0;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#banner{
+    background-image: url('./assets/img/main.jpg');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#banner h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#banner h3{
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#banner button{
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #006494;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#destination{
+    margin: 30px 0;
+    padding: 0 100px;
+}
+
+#destination-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#destination-grid div{
+    height: 350px;
+    padding: 1rem;
+}
+
+#destination-grid div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#destination-grid .small{
+    flex-basis: 30%;
+}
+
+#destination-grid .large{
+    flex-basis: 70%;
+}
+
+
+@media screen and (width<=980px) {
+    #destination-grid .small{
+        flex-basis: 50%;
+    }
+    
+    #destination-grid .large{
+        flex-basis: 50%;
+    }
+}
+
+
+@media screen and (width<=700px) {
+    #destination-grid .small{
+        flex-basis: 100%;
+    }
+    
+    #destination-grid .large{
+        flex-basis: 100%;
+    }
+}
+
+
+#banner-tagline{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    100%{
+        opacity: 1;
+    }
+}
