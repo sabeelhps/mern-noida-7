@@ -1,0 +1,10 @@
+.movie{
+    color: purple;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: line-through;
+}
+
+.abc{
+    border: 3px solid black;
+}
