@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Food = require('../models/food');
 
 const foodList = [
     {
@@ -36,6 +37,20 @@ const foodList = [
 
 router.get('/foods', (req, res) => {
     res.json(foodList);
+});
+
+router.post('/foods', async (req, res) => {
+  console.log('Entry in create food');
+  const { name, price, desc, imageUrl} = req.body;
+  // const food = new Food({ name, price, desc, imageUrl });
+  // await food.save();
+  const food = await Food.create({ name, price, desc, imageUrl })
+  console.log(food);
+  
+  res.json({
+    message: "Food Created successfully",
+    foodId: food._id
+  })
 });
 
 module.exports = router;

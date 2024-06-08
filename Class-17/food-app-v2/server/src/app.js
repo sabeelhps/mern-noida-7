@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
 
+// This is used to parse json data coming in request body
+app.use(express.json());
+
 // Routes 
 const foodRoutes = require('./routes/foodRoutes');
+
 
 app.get('/echo', (req, res) => {
     res.send('Recived Echo!');
